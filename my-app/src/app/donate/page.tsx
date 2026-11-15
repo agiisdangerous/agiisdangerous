@@ -17,7 +17,7 @@ export default function DonatePage() {
         </Link>
         <nav className="site-nav" aria-label="Main navigation">
           <Link href="/">Home</Link>
-          <Link href="/#articles">Articles</Link>
+          <Link href="/articles">Articles</Link>
           <Link href="/donate" className="nav-donate" aria-current="page">
             Donate
           </Link>
@@ -49,9 +49,6 @@ export default function DonatePage() {
 
       <footer className="site-footer">
         <Link href="/">AGI is Dangerous</Link>
-        <Link href="#top" className="back-to-top">
-          Back to top ↑
-        </Link>
       </footer>
     </main>
   );

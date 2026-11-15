@@ -44,7 +44,7 @@ export default function HomePage() {
         </Link>
         <nav className="site-nav" aria-label="Main navigation">
           <Link href="#home">Home</Link>
-          <Link href="#articles">Articles</Link>
+          <Link href="/articles">Articles</Link>
           <Link href="/donate" className="nav-donate">
             Donate
           </Link>
@@ -225,9 +225,6 @@ export default function HomePage() {
 
       <footer className="site-footer">
         <Link href="#home">AGI is Dangerous</Link>
-        <Link href="#home" className="back-to-top">
-          Back to top ↑
-        </Link>
       </footer>
     </main>
   );

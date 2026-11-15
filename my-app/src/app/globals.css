@@ -474,3 +474,50 @@ img { display: block; }
   .latest-list { gap: 23px; }
   .latest-card { font-size: 15px; }
 }
+
+/* Floating Back to Top Circle Button */
+.back-to-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+  background: #111111;
+}
+
+.back-to-top img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .back-to-top img {
+    width: 20px;
+    height: 20px;
+  }
+}

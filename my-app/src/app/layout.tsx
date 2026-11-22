@@ -3,9 +3,14 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AGI is Dangerous | The risks of advanced AI",
+  title: "AGI is Dangerous",
   description:
-    "Articles and analysis about the risks of advanced AI, employment, and the infrastructure behind artificial intelligence.",
+    "Warning about the risks of advanced Artificial Intelligence (AI).",
+  icons: {
+    icon: "/img/agiisdangerous.png",
+    shortcut: "/img/agiisdangerous.png",
+    apple: "/img/agiisdangerous.png",
+  },
 };
 
 export default function RootLayout({

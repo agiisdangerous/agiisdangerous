@@ -414,7 +414,24 @@ img { display: block; }
   .site-nav { gap: clamp(18px, 7vw, 34px); font-size: 14px; }
   .site-nav .nav-donate { min-width: 0; padding: 8px 19px; }
   .top-layout { display: flex; flex-direction: column; gap: 27px; }
-  .feature-column, .latest-column { width: 100%; }
+    .feature-column {
+      display: contents;
+    }
+  
+    .hero-carousel {
+      order: 1;
+      width: 100%;
+    }
+  
+    .latest-column {
+      order: 2;
+      width: 100%;
+    }
+  
+    .categories-section {
+      order: 3;
+      width: 100%;
+    }
   .hero-image-wrap { aspect-ratio: 1.8 / 1; }
   .hero-caption {
     position: static;
@@ -448,7 +465,7 @@ img { display: block; }
   .article-card p { font-size: 12px; }
   .article-category { font-size: 9px; }
   .read-more { font-size: 11px; }
-  .donate-banner { flex-direction: column; align-items: flex-start; gap: 22px; margin: 0 12px 24px; padding: 25px 21px; border-radius: 17px; }
+  .donate-banner { flex-direction: column; align-items: flex-start; gap: 22px; margin: 20px 12px 24px; padding: 25px 21px; border-radius: 17px; }
   .donate-banner h2 { font-size: 28px; }
   .donate-banner p { font-size: 14px; }
   .donate-banner-button { width: 100%; min-width: 0; padding: 14px 20px; }

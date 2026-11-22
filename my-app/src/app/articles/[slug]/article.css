@@ -144,13 +144,148 @@
     font-weight: 700;
 }
 
-.article-page-footer {
-    width: min(100%, 1120px);
-    margin: 74px auto 0;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
-    color: #777;
+.article-page .site-footer {
+    margin-top: 74px;
+}
+
+/* Article References Section */
+.article-references {
+    width: min(100%, 720px);
+    margin: 56px auto 0;
+    padding: clamp(22px, 3.5vw, 34px);
+    border-radius: 20px;
+}
+
+.references-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #7cc4fa;
+}
+
+.references-heading {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    letter-spacing: -0.9px;
+    line-height: 1.1;
+}
+
+.references-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.reference-card {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.68);
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.18s ease,
+        box-shadow 0.2s ease;
+}
+
+.reference-card-link:hover {
+    border-color: #7cc4fa;
+    background: rgba(0, 37, 68, 0.85);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(0, 37, 68, 0.85);
+}
+
+.reference-index {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #212121;
+    color: #7cc4fa;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.reference-card-link:hover .reference-index {
+    background: #6eacdc;
+    color: #ffffff;
+}
+
+.reference-content {
+    min-width: 0;
+}
+
+.reference-title {
+    margin: 0 0 6px;
+    color: #ffffff;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: clamp(16px, 1.5vw, 18px);
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.reference-meta {
+    margin: 0 0 10px;
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.reference-url {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #7cc4fa;
     font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    word-break: break-all;
+}
+
+.reference-card-link:hover .reference-url {
+    color: #ffffff;
+}
+
+@media (max-width: 760px) {
+    .article-references {
+        margin-top: 42px;
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .references-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reference-card {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 12px;
+        padding: 15px 14px;
+    }
+
+    .reference-index {
+        width: 34px;
+        height: 34px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -204,7 +339,7 @@
         letter-spacing: -0.4px;
     }
 
-    .article-page-footer {
+    .article-page .site-footer {
         margin-top: 48px;
     }
 }

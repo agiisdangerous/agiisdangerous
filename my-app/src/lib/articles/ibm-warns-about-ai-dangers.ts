@@ -18,10 +18,6 @@ const article: Article = {
       text: "IBM states that the same systems that could be used to discover drugs, mitigate climate change, and protect wildlife could also threaten security, jobs, and even human existence itself.",
     },
     {
-      type: "paragraph",
-      text: "The goal should not be to reject every AI tool. It should be to match each tool to an appropriate task, make its limits visible, and keep consequential decisions accountable to people.",
-    },
-    {
       type: "heading1",
       text: "Bias",
     },

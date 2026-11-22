@@ -3,8 +3,6 @@ import type { Article } from "./articles/article-types";
 import geminiArticle from "./articles/gemini-4-argon-ai-extinction-risk";
 import ibmArticle from "./articles/ibm-warns-about-ai-dangers";
 import moralValuesArticle from "./articles/ai-has-no-moral-values";
-import dataCentersArticle from "./articles/data-centers-environmental-cost";
-import jobsArticle from "./articles/ai-impact-on-jobs";
 
 export type { Article } from "./articles/article-types";
 
